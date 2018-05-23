@@ -1,0 +1,22 @@
+
+
+ <view class="search-box">
+        <input class="input" bindinput="inputName" value="{{bulidname}}" type="text" placeholder="输入楼盘或或关键字"  maxlength="10" />
+        <icon class="icon" type="search" size="40" />
+</view>
+
+<view class="caption" class="{{bulidingData?'bright789_view_hide':'bright789_view_show'}}" >
+    <text class="title-link">最近搜索</text>
+    <view class="row" bindtap="getorderVal" data-val="{{item}}" wx:for="{{orderData}}" wx:for-index="id" wx:key="id">
+        {{item.name}}
+   
+    </view>
+   
+</view>
+<view class="buliding" class="{{bulidingData?'bright789_view_show':'bright789_view_hide'}}" >
+     <text class="title-link">你可能想找</text>
+    <view class="row"  bindtap="getVal" data-val="{{item}}" wx:for="{{bulidingData}}" wx:for-index="id" wx:key="id">
+        <view >  {{item.name}} </view>
+    </view>
+   
+</view>

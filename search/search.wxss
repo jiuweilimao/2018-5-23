@@ -1,0 +1,36 @@
+/* search/search.wxss */
+.search-box{
+    position: relative;
+    
+}
+.input{
+    border-bottom: 1rpx solid red;
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    margin-left: 20rpx;
+    margin-top: 20rpx;
+    margin-right: 20rpx;
+    height: 100rpx;
+    padding-left: 100rpx
+}
+.icon{
+position: absolute;
+top: 10rpx;
+left: 25rpx;
+}
+.caption{
+    margin-top: 100rpx;
+}
+.row{
+
+/* border-top: 1px solid #000; */
+height: 100rpx;
+line-height: 100rpx;
+}
+.bright789_view_hide{  
+    display: none;  
+   }  
+.bright789_view_show{  
+    display: block;  
+} 
